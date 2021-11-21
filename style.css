@@ -95,3 +95,7 @@ button{
 button:hover{
     background-color: #94B3FD;
 }
+.txt-msg{
+    font-size: 32px;
+    margin-bottom: 18px;
+}
