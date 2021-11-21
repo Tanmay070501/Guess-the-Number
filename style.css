@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Acme', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #B983FF;
+    color: #99FEFF;
+}
+header{
+    display: flex;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 120px;
+}
+header p{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+}
+.again{
+    width: 100px;
+    height: 50px;
+    margin-left: 12px;
+    border: none;
+    cursor: pointer;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+    gap: 32px;
+    font-size: 50px;
+    color: 94DAFF;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #94B3FD;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.right{
+    font-size: 24px;
+    margin: auto
+}
+.input{
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+.check{
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    cursor:pointer;
+}
+.sc-board{
+    margin-bottom: 24px;
+}
+.ys{
+    margin-bottom: 12px;
+}
+button{
+    background-color: #99FEFF;
+    border: none;
+}
+button:hover{
+    background-color: #94B3FD;
+}

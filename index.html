@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess My Number</title>
+</head>
+<body>
+    <header>
+        <button class="again">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+        </button>
+        <p>( Between 1 and 20 )</p>
+    </header>
+    <section>
+        <p>Guess the Number!!!</p>
+        <div class="box">
+            <p>?</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="left">
+            <input type="number" class="input" min="1" max="20">
+            <button class="check">Check!</button>
+        </div>
+
+        <div class="right">
+            <p class="sc-board">🎮 Scoreboard 🎮</p>
+            <p class="ys">🕹 Score : <span class="y-score">20</span> 🕹</p>
+            <p>⚡ High Score : <span class="h-score">0</span> ⚡</p>
+        </div>
+    </main>
+</body>
+</html>
