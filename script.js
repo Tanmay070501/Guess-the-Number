@@ -42,3 +42,12 @@ document.querySelector('.again').addEventListener('click',()=>{
     secretNum = randNum();
     //console.log(secretNum)
 })
+
+// Press enter event
+
+document.querySelector('.input').addEventListener('keyup',(event)=>{
+    if(event.keyCode === 13){
+        event.preventDefault();
+        document.querySelector('.check').click()
+    }
+})
