@@ -4,7 +4,7 @@ const randNum  = ()=>{
 }
 let secretNum = randNum();
 let score = 20;
-console.log(secretNum)
+//console.log(secretNum)
 document.querySelector('.check').addEventListener('click' , function() {
     const guessNum = Number(document.querySelector('.input').value)
     if(guessNum){   // If input is entered
@@ -40,5 +40,5 @@ document.querySelector('.again').addEventListener('click',()=>{
     document.querySelector('.txt-msg').textContent = 'Start Guessing ...'
     document.querySelector('.screen-txt').textContent = '?'
     secretNum = randNum();
-    console.log(secretNum)
+    //console.log(secretNum)
 })
