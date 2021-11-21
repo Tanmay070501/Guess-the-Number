@@ -18,14 +18,21 @@ document.querySelector('.check').addEventListener('click' , function() {
             document.querySelector('.h-score').textContent = hScore
         }
         else{   // If guess is wrong
+            if(score>0){
+                score--;
+                document.querySelector('.y-score').textContent = score
+            }
+            if(score === 0){
+                document.querySelector('.y-score').textContent = 0
+                document.querySelector('.txt-msg').textContent = 'Game Over!'
+                return
+            }
             if(guessNum > secretNum){   // guess is too high
                 document.querySelector('.txt-msg').textContent = 'Too high!'
             }
             else{   //guess is too low
                 document.querySelector('.txt-msg').textContent = 'Too low!'
             }
-            score--;
-            document.querySelector('.y-score').textContent = score
         }
     }else{
         document.querySelector('.txt-msg').textContent = 'Enter a value first...'
